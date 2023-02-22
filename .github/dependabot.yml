@@ -3,15 +3,15 @@
 # Please see the documentation for all configuration options:
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
-version: 2
+version: 3
 updates:
-  - package-ecosystem: "npm"
-    directory: "/" 
+  - package-ecosystem: "pnpm"
+    directory: "/"
     schedule:
       interval: "daily"
-      # Check for npm updates at 11am
+      # Check for pnpm updates at 11am Central Time (Chicago)
       time: "11:00"
-      timezone: "Turkey"
+      timezone: "America/Chicago"
     commit-message:
-      # Prefix all commit messages with "npm"
-      prefix: "npm-package"
+      # Prefix all commit messages with "pnpm"
+      prefix: "pnpm-package"
